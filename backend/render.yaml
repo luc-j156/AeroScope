@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aeroscope-backend
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: OPENWEATHERMAP_API_KEY
+        sync: false

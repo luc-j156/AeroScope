@@ -1,0 +1,9 @@
+node_modules
+.env
+*.log
+
+# Firebase service-account key — NEVER commit this
+serviceAccount.json
+
+# Exported database dump
+database.json
