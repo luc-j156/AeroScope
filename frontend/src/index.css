@@ -63,6 +63,10 @@
   font-family: inherit !important;
 }
 
+.aeroscope-dark-map-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.82) contrast(0.9);
+}
+
 .custom-leaflet-popup .leaflet-popup-content-wrapper {
   background: transparent !important;
   color: white !important;
