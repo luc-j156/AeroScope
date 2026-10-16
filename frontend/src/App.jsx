@@ -239,7 +239,13 @@ function App() {
       />
       
       <main className="flex-1 flex flex-col h-screen overflow-y-auto relative">
-        <Header onSearch={handleSearch} toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
+        <Header
+          onSearch={handleSearch}
+          toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+          user={user}
+          userRole={userRole}
+          onLogout={handleLogout}
+        />
         
         {error && (
           <div className="mx-6 mt-4 bg-accent-orange/10 border border-accent-orange/20 text-accent-orange px-4 py-3 rounded-xl flex items-center justify-between animate-in fade-in slide-in-from-top-4">
